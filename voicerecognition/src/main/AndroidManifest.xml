@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mobilefinder.spinno.com.mobilefinder" >
+    package="mobilefinder.spinno.com.voicerecognition" >
+
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -11,23 +12,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".VoiceRecognition"
             android:label="@string/app_name" >
-
-        </activity>
-
-        <service android:name=".VoiceCommandService" />
-        <service android:name=".TrialClass" />
-
-        <activity
-            android:name=".TrialActivity"
-            android:label="@string/title_activity_trial" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
